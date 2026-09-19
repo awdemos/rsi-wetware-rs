@@ -1,0 +1,15 @@
+[package]
+name = "wetware"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.6.6", features = ["derive"] }
+faer = "0.24.4"
+flate2 = { version = "1.1.10", default-features = false, features = ["rust_backend"] }
+rand = { version = "0.9", default-features = false, features = ["std", "std_rng"] }
+rand_distr = { version = "0.6", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ureq = { version = "3.4.2", default-features = false, features = ["rustls"] }
+zip = { version = "8.6.0", default-features = false, features = ["deflate"] }

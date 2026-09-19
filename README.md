@@ -2,12 +2,24 @@
 
 <p align="center">
   <strong>Compute on a real brain — then teach the lab around it to improve itself.</strong><br />
-  A fork of <a href="https://github.com/awdemos/wetware-rs">wetware-rs</a> implementing the
-  recursive-self-improvement autonomy ladder (L1–L5) from
-  <em>The Last AI Built by Humans</em> survey: the connectome stays fixed forever,
-  and everything around it — hyperparameters, curricula, deployment adaptation,
-  and the improvement policy itself — becomes a closed, observable loop.
+  The upstream project proves a frozen connectome can compute. This fork asks the
+  next question: can the system <em>around</em> the brain get better on its own?
+  The recursive-self-improvement ladder (L1–L5) from <em>The Last AI Built by
+  Humans</em> runs on the harness — hyperparameters, curricula, deployment
+  adaptation, and the improvement policy itself — while the wiring of a real
+  larval fruit-fly brain stays fixed forever. Nothing here edits the animal.
 </p>
+
+> **Why a handwriting task?** It was never the point. 8×8 digits is the cheapest
+> stage where "a fixed brain computes" is unambiguous (10% baseline → 92.8%) and
+> where a linear readout on 2952 fixed neurons still has headroom to tune. The
+> loop is task-agnostic — swap in any task behind an `Evaluator` and L1–L5, the
+> bank, and the observability all work unchanged. The demo task is the petri
+> dish; the improving loop is the organism.
+
+A fork of [awdemos/wetware-rs](https://github.com/awdemos/wetware-rs) (itself a
+Rust port of the Python `wetware` package).
+
 
 ## What's added in this fork
 

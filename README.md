@@ -1,21 +1,21 @@
 <h1 align="center">wetware (Rust) — RSI fork</h1>
 
 <p align="center">
-  <strong>Compute on a real brain — then teach the lab around it to improve itself.</strong><br />
-  The upstream project proves a frozen connectome can compute. This fork asks the
-  next question: can the system <em>around</em> the brain get better on its own?
-  The recursive-self-improvement ladder (L1–L5) from <em>The Last AI Built by
-  Humans</em> runs on the harness — hyperparameters, curricula, deployment
-  adaptation, and the improvement policy itself — while the wiring of a real
-  larval fruit-fly brain stays fixed forever. Nothing here edits the animal.
+  <strong>A general-purpose recursive self-improvement loop — demonstrated on a real brain.</strong><br />
+  Hand the loop any fixed system and a task, and it teaches itself to use that
+  system better across generations: search, curricula, gated adaptation, and a
+  persistent memory of what worked that each run inherits — the L1–L5 ladder
+  from <em>The Last AI Built by Humans</em>, fully observable. The fixed system
+  here is the only complete brain wiring ever mapped (a larval fruit fly's; the
+  animal is never edited). The first benchmark is handwritten digits. Both are
+  incidental — swap either, and the loop is unchanged.
 </p>
 
-> **Why a handwriting task?** It was never the point. 8×8 digits is the cheapest
-> stage where "a fixed brain computes" is unambiguous (10% baseline → 92.8%) and
-> where a linear readout on 2952 fixed neurons still has headroom to tune. The
-> loop is task-agnostic — swap in any task behind an `Evaluator` and L1–L5, the
-> bank, and the observability all work unchanged. The demo task is the petri
-> dish; the improving loop is the organism.
+> **Why these demos?** They're the cheapest stage where the loop's behavior is
+> unambiguous: a fixed brain that demonstrably computes (10% baseline → 92.8%)
+> with real tuning headroom for a linear readout. The subject of this repo is
+> not the task — it's the loop. Anything that fits behind an `Evaluator` works:
+> L1–L5, the bank, and the observability are task-agnostic.
 
 A fork of [awdemos/wetware-rs](https://github.com/awdemos/wetware-rs) (itself a
 Rust port of the Python `wetware` package).

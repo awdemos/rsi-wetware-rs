@@ -1,7 +1,7 @@
 <h1 align="center">wetware (Rust) — RSI fork</h1>
 
 <p align="center">
-  <strong>A general-purpose recursive self-improvement loop — demonstrated on a real brain.</strong><br />
+  <strong>A general-purpose recursive self-improvement loop — demonstrated on a real fly brain.</strong><br />
   Hand the loop any fixed system and a task, and it teaches itself to use that
   system better across generations: search, curricula, gated adaptation, and a
   persistent memory of what worked that each run inherits — the L1–L5 ladder
